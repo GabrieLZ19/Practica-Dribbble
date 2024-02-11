@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Mona-Sans';
+
+    src: url('../Fuentes/mona-sans-cufonfonts-webfont/Mona-Sans-Regular.woff')
+    }
+
+@font-face {
+    font-family: "Mona-Sans";
+    font-style: italic;
+    src: url("../Fuentes/Cookie/Cookie-Regular.ttf");
+}
+
+*{
+
+    font-family: 'Mona-Sans',Arial, Helvetica, sans-serif;
+    background-color: #F8F7F4;
+    overflow-x: hidden;
+
+}
+
+header{ 
+
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+#contenedor-nav a{
+
+    font-size: 14px;
+    margin: 14px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+#logo{
+
+    color: #565564;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+#contenedor-login{
+    
+    width: 500px;
+    
+}
+
+.botonBuscar{
+
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    margin: 20px;
+    background-color: white;
+    font-size: 14px;
+}
+
+#logIn{
+
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+#botonSign{
+
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    margin-left: 30px;
+    font-weight: bold;
+    
+}
+
+#contenedorTitulo{
+
+    display: grid;
+    place-items: center;
+    
+
+}
+
+#botonCambiante{
+
+    margin-top: 60px;
+    height: 40px;
+    width: 350px;
+    border-radius: 25px;
+    font-size:15px;
+    font-weight: bold;
+    border: none;
+    animation: cambiarColor 10s infinite;
+    
+}
+
+@keyframes cambiarColor {
+    
+    0%{ 
+
+        background-color: #F9E39A;
+    }
+
+    25%{
+
+        background-color: #FFC1B3;
+    }
+
+    40%{
+
+        background-color: #FFBCBF;
+    }
+
+    60%{
+
+        background-color: #DCB8F0;
+    }
+    80%{
+
+        background-color: #D9CBEC;
+    }
+    100%{
+
+        background-color:#E5E3E0;
+    }
+}
+#titulo{
+
+    font-size: 72px;
+    margin-bottom: -10px;
+    
+}
+
+#subtitulo{
+
+    font-size: 20px;
+
+}
+
+#botonStart{
+
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 130px;
+    height: 50px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+#carruselImg{
+    
+    width: max-content;
+    height: 310px;
+    display: flex;
+    column-gap: 20px;
+    animation: loop 10s linear infinite; 
+
+}
+
+@keyframes loop {
+    
+    0%{
+
+        transform: translateX(0);
+    }
+
+    100%{
+
+        transform: translateX(-50%);
+    }
+}
+
+#carruselImg img{
+
+    width: fit-content;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 25px;
+}
+
+
+
